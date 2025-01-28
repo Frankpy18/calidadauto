@@ -164,20 +164,42 @@ const sugerencias = {
     '1.8': [
         'Registrar todas las consultas del cliente dentro del sistema ya que te ayudara en el futuro y ayudara a las otras áreas para saber que solicitud ingreso el cliente. ',
     ],
+    '1.9': [
+        'No olvidar brindar el código de atención del proceso realizado. ',
+
+    ],
     '1.10': [
         ' Al término de cada llamada debes consultar si toda la información que brindaste está clara, esto con el fin de evitar que el cliente se vaya con alguna duda o genere una rellamada: ¿la información brindada ha quedado clara?',
+    ],
+    '1.11': [
+        'Indícale al cliente las acciones que realizas para evitar tener tiempos vacíos innecesarios.',
     ],
     '2.2': [
         'Validar el enlace de busca promociones para verificar si es que cuenta con upgrade o Full claro, Recuerda ir a SIAC -> ENLACES -> BUSCA PROMOCIONES.',
     ],
+    '3.1': [
+        'No debes cuestionar al cliente por su tono de voz, seguir con la atención debida',
+    ],
     '3.2': [
-        'Tienes que presentarte de manera correcta',
+        'Tienes que presentarte de manera correcta',    
     ],
     '3.3': [
         'Dirigirte al cliente por su nombre, para generar una conexión con él/ella: “Señor Carlos le brindo la información” / “Señorita Susana permítame un momento en línea“/ “Señora Carmen le voy a comentar lo siguiente”.',
     ],
+    '3.4': [
+        'No se debe sentir que en la llamada el asesor está leyendo speech o pautas, ni que la forma en como lo dice es parte de un guion actuado.',
+    ],
+    '3.5': [
+        'El tono de voz debe ser el adecuado, siempre teniendo en cuenta al tipo de cliente que se atiende.',        
+    ],
     '3.6': [
         'Empatizar en todas nuestras llamadas y de esta forma expresarle al cliente que comprendemos su consulta/problema/inconformidad/duda/requerimiento, recuerda que el tono de voz que uses en el momento de empatizar es el punto más fuerte para que la frase suene correctamente. ',
+    ],
+    '3.7': [
+        'Ante clientes que ingresan negativos,debes tratar de calmar las emociones del cliente, no incrementarlas.',
+    ],
+    '3.8': [
+        'Debes mantener la calma en tus expresiones verbales y no verbales ante comentarios de parte del cliente que puedan ser negativas directas hacia ti o hacia la Claro.',
     ],
     '3.9': [
         'Mencionar la encuesta al final de la llamada, para que el cliente tenga conocimiento de la misma y pueda calificar tu atención: En este momento lo estaré derivando a una encuesta para que pueda calificar mi atención. ',
@@ -195,7 +217,7 @@ function crearListaPrincipal() {
             <div class="opciones">
                 <label><input type="radio" name="${punto.id}" value="si" onchange="actualizarPreocupaciones()"> Sí</label>
                 <label><input type="radio" name="${punto.id}" value="no" onchange="actualizarPreocupaciones()"> No</label>
-                <label><input type="radio" name="${punto.id}" value="na" onchange="actualizarPreocupaciones()"> N/A</label>
+                <label><input type="radio" name="${punto.id}" value="na" onchange="actualizarPreocupaciones()"> No Aplica</label>
             </div>
         </div>
     `).join('');
